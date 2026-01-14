@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pix2PDF – Image to PDF Converter</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<div class="bg-blur"></div>
+
+<header>
+  <div class="logo">
+    <span class="logo-icon">📄</span>
+    Pix2PDF
+  </div>
+</header>
+
+<main class="card">
+  <h1>Convert Images to PDF</h1>
+  <p class="subtitle">Fast · Secure · Works Offline</p>
+
+  <div id="dropZone" class="drop-zone">
+    <div class="icon">🖼️</div>
+    <p id="dropText">Drop images here</p>
+    <span id="fileInfo">or tap to browse</span>
+    <input type="file" id="imageInput" accept="image/*" multiple hidden />
+  </div>
+
+  <!-- PREVIEW CONFIRMATION -->
+  <div id="previewGrid" class="preview-grid"></div>
+
+  <button id="convertBtn" class="primary-btn" disabled>
+    Convert to PDF
+  </button>
+
+  <div class="progress-wrap">
+    <div id="progressBar"></div>
+  </div>
+</main>
+
+<footer>
+  <p>100% Client-side · No uploads · Privacy friendly</p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
